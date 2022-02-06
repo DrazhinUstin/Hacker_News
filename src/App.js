@@ -8,7 +8,7 @@ const API_START_POINT = 'http://hn.algolia.com/api/v1/';
 const initParams = {
     search: 'search_by_date',
     query: 'react',
-    tags: '',
+    tags: 'story',
     page: 0,
 };
 

@@ -2,11 +2,27 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    align-items: flex-start;
     @media screen and (max-width: 1024px) {
         grid-template-columns: unset;
     }
     &-article {
         padding: 1rem;
         box-shadow: $shadow;
+        .date {
+            color: $grey;
+            text-align: right;
+        }
+        h4 {
+            margin: 0.75rem 0;
+            line-height: 1.25;
+        }
+        .text {
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+        }
+        .btn-container {
+            margin-top: 0.75rem;
+        }
     }
 }
