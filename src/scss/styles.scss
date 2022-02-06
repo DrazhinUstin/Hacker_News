@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import 'config';
+@import 'navbar';
+@import 'search-form';
+@import 'search-result';
+@import 'pagination';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: capitalize;
+    letter-spacing: $spacing;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+input,
+select {
+    background-color: $white;
+    color: $black;
+    font-size: 1rem;
+}
+
+svg {
+    display: block;
+}
+
+button {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    border-radius: $radius;
+    background-color: $purple;
+    color: $white;
+    text-transform: capitalize;
+    letter-spacing: $spacing;
+    transition: $ease-trans;
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.section {
+    padding: 4rem 0;
+    &-center {
+        max-width: $max-width;
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+.loading {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 4rem auto;
+    border: 0.5rem solid $purple;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear 0s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

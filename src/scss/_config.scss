@@ -1,0 +1,22 @@
+$black: rgb(36, 32, 32);
+$white: rgb(255, 255, 255);
+$grey: rgb(180, 180, 180);
+$purple: rgb(102, 51, 153);
+$max-width: 1200px;
+$radius: 0.25rem;
+$spacing: 0.1rem;
+$shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+$border-shadow: 0 0 0 1px $purple;
+$ease-trans: all 0.4s ease;
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,21 @@
+.navbar-wrapper {
+    background-color: $purple;
+}
+
+.navbar {
+    height: 5rem;
+    @extend %flex-between;
+    color: $white;
+    &-logo {
+        font-size: 2rem;
+        font-style: italic;
+    }
+    &-github {
+        color: $white;
+        font-size: 2rem;
+        transition: $ease-trans;
+        &:hover {
+            color: rgb(252, 225, 73);
+        }
+    }
+}
