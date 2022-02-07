@@ -45,6 +45,9 @@
             &:focus ~ svg {
                 color: $purple;
             }
+            &::placeholder {
+                color: $grey;
+            }
         }
         svg {
             position: absolute;

@@ -6,7 +6,12 @@ const Navbar = () => {
         <nav className='navbar-wrapper'>
             <div className='navbar section-center'>
                 <h1 className='navbar-logo'>hacker news</h1>
-                <a href='#' target='_blank' rel='noopener noreferrer' className='navbar-github'>
+                <a
+                    href='https://github.com/DrazhinUstin/Hacker_News'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='navbar-github'
+                >
                     <FaGithub />
                 </a>
             </div>

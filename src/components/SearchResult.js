@@ -5,6 +5,9 @@ const SearchResult = ({ isLoading, articles }) => {
     if (isLoading) {
         return <div className='loading'></div>;
     }
+    if (!articles.length) {
+        return <p className='alert-message'> No articles to display...</p>;
+    }
     return (
         <div className='search-result'>
             {articles.map((article) => {

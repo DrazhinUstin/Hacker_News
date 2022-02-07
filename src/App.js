@@ -4,10 +4,10 @@ import SearchForm from './components/SearchForm';
 import Pagination from './components/Pagination';
 import SearchResult from './components/SearchResult';
 
-const API_START_POINT = 'http://hn.algolia.com/api/v1/';
+const API_START_POINT = 'https://hn.algolia.com/api/v1/';
 const initParams = {
     search: 'search_by_date',
-    query: 'react',
+    query: '',
     tags: 'story',
     page: 0,
 };

@@ -10,6 +10,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    &::selection {
+        background-color: $light-green;
+        color: $purple;
+    }
 }
 
 body {
@@ -64,6 +68,7 @@ button {
     border-radius: $radius;
     background-color: $purple;
     color: $white;
+    box-shadow: $light-shadow;
     text-transform: capitalize;
     letter-spacing: $spacing;
     transition: $ease-trans;
@@ -93,6 +98,13 @@ button {
         width: 90vw;
         margin: 0 auto;
     }
+}
+
+.alert-message {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: $spacing;
 }
 
 .loading {

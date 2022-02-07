@@ -37,6 +37,7 @@ const SearchForm = ({ isSettingsOpen, setIsSettingsOpen, params, setParams }) =>
                 <input
                     id='query'
                     type='text'
+                    placeholder='Search news'
                     autoComplete='off'
                     value={params.query}
                     onChange={handleChange}
