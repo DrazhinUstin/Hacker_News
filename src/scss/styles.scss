@@ -67,9 +67,6 @@ button {
     text-transform: capitalize;
     letter-spacing: $spacing;
     transition: $ease-trans;
-    &:active {
-        transform: scale(0.95);
-    }
 }
 
 .text-btn {

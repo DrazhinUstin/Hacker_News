@@ -44,14 +44,8 @@ const App = () => {
             <Navbar />
             <section className='section section-center'>
                 <SearchForm {...{ isSettingsOpen, setIsSettingsOpen, params, setParams }} />
-                {isLoading ? (
-                    <div className='loading'></div>
-                ) : (
-                    <>
-                        <Pagination />
-                        <SearchResult articles={articles} />
-                    </>
-                )}
+                <Pagination {...{ isLoading, params, setParams, nbPages }} />
+                <SearchResult {...{ isLoading, articles }} />
             </section>
         </>
     );

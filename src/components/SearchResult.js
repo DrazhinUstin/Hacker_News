@@ -1,7 +1,10 @@
 import React from 'react';
 import Article from './Article';
 
-const SearchResult = ({ articles }) => {
+const SearchResult = ({ isLoading, articles }) => {
+    if (isLoading) {
+        return <div className='loading'></div>;
+    }
     return (
         <div className='search-result'>
             {articles.map((article) => {

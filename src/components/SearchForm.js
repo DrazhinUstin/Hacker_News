@@ -4,7 +4,7 @@ import { FaSearch, FaCog } from 'react-icons/fa';
 const SearchForm = ({ isSettingsOpen, setIsSettingsOpen, params, setParams }) => {
     const handleChange = (e) => {
         setParams((params) => {
-            return { ...params, [e.target.id]: e.target.value };
+            return { ...params, page: 0, [e.target.id]: e.target.value };
         });
     };
     return (
@@ -34,7 +34,13 @@ const SearchForm = ({ isSettingsOpen, setIsSettingsOpen, params, setParams }) =>
                 </div>
             </div>
             <div className='search-form-input'>
-                <input id='query' type='text' value={params.query} onChange={handleChange} />
+                <input
+                    id='query'
+                    type='text'
+                    autoComplete='off'
+                    value={params.query}
+                    onChange={handleChange}
+                />
                 <FaSearch />
             </div>
         </form>

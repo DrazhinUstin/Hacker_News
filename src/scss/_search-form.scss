@@ -3,6 +3,9 @@
     & > .btn {
         @extend %flex-center;
         column-gap: 0.25rem;
+        &:hover svg {
+            animation: spin 0.8s linear 0s infinite;
+        }
     }
     input,
     select {
